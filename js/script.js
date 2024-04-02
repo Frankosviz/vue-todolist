@@ -6,10 +6,19 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            ingredienti: ingredienti
+            ingredienti: ingredienti,
+            acquistato: ''
         }
     },
     methods: {
-        
+        toggleAcquistato(id){
+            const ingrediente = this.ingredienti.find((el)=>{
+                return el.id === id;
+            })
+            console.log(ingrediente);
+            if(ingrediente){
+            ingrediente.acquistato = !ingrediente.acquistato;
+        }
+    }
     }
 }).mount('#app')
