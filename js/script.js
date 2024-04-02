@@ -45,5 +45,6 @@ createApp({
             this.ingredienti.push(newObj);
             this.ingredienteText = '';
         },
+        
     }
 }).mount('#app')

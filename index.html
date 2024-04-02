@@ -40,7 +40,7 @@
         </nav>
         <div class="container bg-white text-danger">
             <ul>
-                <li v-for="(item, index) in ingredienti" :key="item.id" class="d-flex justify-content-between p-3 ">
+                <li v-for="(item, index) in ingredienti" :key="item.id" id="myList" class="d-flex justify-content-between p-3 ">
                     <span :class="{'text-decoration-line-through': item.acquistato}" @click="toggleAcquistato(item.id)"
                         class="pointer fw-normal fs-5">
                         {{ item.text }}
