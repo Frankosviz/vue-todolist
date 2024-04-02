@@ -20,13 +20,19 @@
 
 <div id="app">
 
-    <div class="container">
-        <h1 class="text-center">
-            Lista ingredienti Pizzeria per il weekend
-        </h1>
+    
+        <nav
+            class="navbar navbar-expand-sm navbar-dark bg-primary justify-content-center"
+        >
+
+            <h1 class="text-center text-warning">
+                Lista ingredienti Pizzeria per il weekend
+            </h1>
+        </nav>
+        <div class="container bg-warning">
         <ul>
             <li v-for="(item, index) in ingredienti" :key="item.id" class="d-flex justify-content-between">
-                <span :class="{'text-decoration-line-through': item.acquistato}" @click="toggleAcquistato(item.id)" class="pointer" >
+                <span :class="{'text-decoration-line-through': item.acquistato}" @click="toggleAcquistato(item.id)" class="pointer fw-bold fs-5" >
                     {{ item.text }}
                 </span>
                 <i class="fa-thin fa-x pointer" @click="removeItem(item.id)"></i>
