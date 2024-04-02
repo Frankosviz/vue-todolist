@@ -4,16 +4,37 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/img-pizzas.jpeg);
+    background-size: 100% cover;
+    
+}
+
+.img-fran {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    background-image: url(../img/img3.avif);
+    height: 100px;
+}
+
 .pointer {
     cursor: pointer;
 }
 
-.navbar {
+
+/* #container-logo {
     height: 10vh;
-}
+} */
+
+
 
 .container {
-    background-color: warning;
-    height: 90vh;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
 }
 

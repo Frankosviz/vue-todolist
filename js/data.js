@@ -123,25 +123,5 @@ export const ingredienti = [
         id: 25,
         text: "Basilico",
         acquistato: false
-    },
-    {
-        id: 26,
-        text: "Burrata",
-        acquistato: false
-    },  
-    {
-        id: 27,
-        text: "Funghi porcini",
-        acquistato: false
-    },
-    {
-        id: 28,
-        text: "Scarola",
-        acquistato: false
-    },
-    {
-        id: 29,
-        text: "Rucola",
-        acquistato: false
     }
 ];

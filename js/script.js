@@ -29,5 +29,21 @@ createApp({
                 this.ingredienti.splice(i, 1);
             }
         },
+        addIngredienti(){
+            const newObj = {
+                id: null, 
+                text: this.ingredienteText,
+                done: false
+            }
+            let nextId = 0;
+            this.ingredienti.forEach((el)=>{
+                if(nextId < el.id){
+                    nextId = el.id;
+                }
+            });
+            newObj.id = nextId + 1;
+            this.ingredienti.push(newObj);
+            this.ingredienteText = '';
+        },
     }
 }).mount('#app')
